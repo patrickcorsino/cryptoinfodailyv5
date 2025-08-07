@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-darkBg text-white font-sans;
+}
+
+.glow-green {
+  box-shadow: 0 0 8px #00ff99;
+}
+.glow-red {
+  box-shadow: 0 0 8px #ff3366;
+}
+
+.hover-highlight:hover {
+  background-color: #31324e;
+  transition: background-color 0.15s;
+}
+
+.card-glow {
+  box-shadow: 0 2px 16px 0 rgba(0,255,153,0.14), 0 1.5px 5px 0 rgba(0,0,0,0.14);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232531;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+  border-radius: 4px;
+}
+
+
+/* ==== Luxury Theme Additions (GPT-5) ==== */
+.bg-darkBg {
+  background: radial-gradient(60% 40% at 50% 0%, #101622 0%, #0c1220 60%, #0b0f1a 100%);
+}
+
+.card-lux {
+  background: linear-gradient(180deg, #141a2a 0%, #101726 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 213, 111, 0.35); /* gold rim */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+.card-inner {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02), inset 0 -6px 24px rgba(0,0,0,0.35);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #FFD56F 0%, #FFC34D 45%, #FFB638 55%, #E3A43A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #FFD56F 0%, #E3A43A 100%);
+  color: #0b0f1a;
+  border-radius: 14px;
+  padding: 10px 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(255, 198, 82, 0.25);
+}
+
+.title-glow {
+  text-shadow: 0 0 18px rgba(255, 198, 82, 0.2);
+}
+
+.text-muted {
+  color: #8ca0c7;
+}
+
+.table-hairline {
+  border-bottom: 1px solid #22304a;
+}
